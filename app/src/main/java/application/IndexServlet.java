@@ -1,3 +1,5 @@
+//servlet é um objeto que responde a requisições http, não é uma api, mas pode ser usado para criar uma webApi
+//todas as aplicações possuem uma api, mas as de responses http são as WebApi's, popularmente chamadas de API, mas as API não podem ser resumidas a isso
 package application;
 
 import java.io.IOException;
