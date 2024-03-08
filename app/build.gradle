@@ -1,12 +1,19 @@
+// faz a configuração das bibliotecas e plugins
 plugins {
-	id 'java'
-	id 'application'
+	id 'war'
+	id 'org.gretty' version'4.1.2'
 }
 
 repositories {
 	mavenCentral()
 }
 
-application {
-	mainClass = 'application.Main'
+dependencies {
+	implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0'
+	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
+}
+
+gretty {
+	contextPath = "/"
 }
